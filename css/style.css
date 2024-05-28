@@ -81,6 +81,15 @@ header i:first-child{
     padding-left: 20px;
 }
 
+.menu{
+    max-height: 700px;
+}
+
+.banana{
+    height: calc(100vh - 100px);
+    overflow-x: scroll;
+}
+
 
 
 
