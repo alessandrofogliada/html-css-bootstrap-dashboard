@@ -1,0 +1,61 @@
+/* REGOLE GENERALI PAGINA */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    flex:0 0 auto;
+    /* DEBUG */
+    background-color: grey;
+    min-height: 50px;
+}
+
+/* debug color */
+
+.red{
+    /* debug */
+    background-color: red;
+    border: solid white 2px;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.white{
+    background-color: white;
+}
+
+.blue{
+    background-color: blue;
+}
+
+/* REGOLE HEADER */
+
+header {
+    height: 100px;
+    background-color: grey;
+}
+header .row{
+    height: 100%;
+}
+
+header .row .col-8 .col-2{ 
+    /* debug */
+    height: 50px;
+}
+
+
+/* REGOLE MAIN */
+
+
+
+
+/* REGOLE FOOTER */
+
