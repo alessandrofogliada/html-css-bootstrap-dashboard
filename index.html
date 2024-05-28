@@ -12,40 +12,87 @@
 
 <body>
         <header class="row align-items-center">
-                    <div class="col-2 red"></div>
-                    <div class="col-8 red"></div>
-                    <div class="col-2 red"></div>
+                    <div class="col-2 d-flex align-items-center red">
+                        <img src="img/logo.svg" alt="logo boolean">
+                    </div>
+                    <div class="col-8 red">
+                        <nav class="navbar bg-body-tertiary">
+                            <form class="container-fluid">
+                              <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="Prova a cercare:Lezione di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                            </form>
+                          </nav>
+                    </div>
+                    <div class="col-2 d-flex align-items-center red">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-circle-question"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bell"></i>
+
+                    </div>
         </header>
 
-         <main class="row">
+         <main class="row mh-100">
               <!-- colonna verticale sinistra -->
-            <div class="col-2 mh-100 d-flex flex-column justify-content-between align-items-center green">
-                <div class="col-12 red"></div>
-                <div class="col-12 red"></div>
+            <div class="col-1 col-lg-2 d-flex flex-column justify-content-between align-items-center icon green">
+                <div class="col-12 red">
+
+                    <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-sm-none d-md-none d-lg-inline">Home</span>
+                    </div>
+
+                    <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="d-sm-none d-md-none d-lg-inline">Stats</span>
+                    </div>
+
+                    <div>
+                    <i class="fa-solid fa-signal"></i>
+                    <span class="d-sm-none d-md-none d-lg-inline">Signal</span>
+                    </div>
+
+
+                    
+                </div>
+                <div class="col-12 red">
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-sm-none d-md-none d-lg-inline">Admin</span>
+                    </div>
+                </div>
             </div>
 
 
                <!-- Main page -->
-            <div class="col-10 vh-100 yellow">
+
+               <!-- SEZIONE PERCORSO NEL SITO , INFO STUDENTI -->
+            <div class="col-11 col-md-10 overflow-y-scroll yellow">
                 <div class="row">
-                <div class="col-12 blue">
-                    <div class="col-12 red">
+                <div class="col-12 d-md-flex flex-row-reverse blue">
+                    <div class="col-sm-12 col-md-4 red">
                         <h3>Nuovo studente</h3>
                         img con plus
                     </div>
-                    <div class="col-12 red">
+                    <div class="col-sm-12 col-md-4 order-md-1 red">
                         <h2>Boolean</h2>
                         Piano blaze
                         molliche pane
                     </div>
-                    <div class="col-12 red">
+                    <div class="col-sm-12 col-md-4 red">
                         <span>Studenti online negli ultimi 30 minuti</span>
                         <h2>125</h2>
                     </div>
                 </div>
                 </div>
+
+                <!-- SEZIONE TABELLA -->
+
+
                 <div class="row">
-                    <div class="col-12 white">
+                    <div class="col-12 col-lg-7 white">
                         <div class="tabella">
                             <h3>Prossime Classi</h3>
                             <table class="table">
@@ -54,6 +101,10 @@
                                     <th scope="col">First</th>
                                     <th scope="col">Last</th>
                                     <th scope="col">Handle</th>
+
+                                    <!-- PER PULSANTI CERCA MIXED STYLES -->
+                                    <th class="d-none d-md-inline-block" scope="col">Last</th>
+                                    <th class="d-none d-md-inline-block" scope="col">Handle</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -61,51 +112,71 @@
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                   <tr>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
+                                    <td class="d-none d-md-inline-block">Otto</td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -114,6 +185,60 @@
 
                     </div>
 
+                </div>
+
+                <!-- SEZIONE FAQ -->
+                <div class="row">
+                    <div class="col-12 yellow">
+                        <h2>FAQ</h2>
+                        <div>
+                            <span>Come aggiungere un nuovo studente?</span>
+                        </div>
+
+                        <div>
+                            <span>Come aggiungere un nuovo studente?</span>
+                        </div>
+
+                        <div>
+                            <span>Come aggiungere un nuovo studente?</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEZIONE TO DO -->
+                <div class="row flex-column">
+                    <div class="col-12 blue">
+                        <h2>Todo</h2>
+                        <div>
+                            <input type="checkbox">
+                            Kickoff nuove classe
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Lezione su bootstrap5 in classe #75
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            Controllare username github studenti
+                        </div>
+                    </div>
+                </div>        
+                        
+                <!-- SEZIONE GRAFICO -->
+                <div class="row">
+                    <div class="col-12">
+                    <div>immagine grafico</div>
+                    <h3>utenti attivi</h3>
+                    <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                    <br>
+                    <span>Gennaio 1200</span>
+                    <br>
+                    <span>Gennaio 1200</span>  
+                    <br>
+                    <span>Gennaio 1200</span>
+                    <br>
+                    <a href="#">Visualizza report approfondito</a>
+                    </div>
                 </div>
             </div>
          </main>  
