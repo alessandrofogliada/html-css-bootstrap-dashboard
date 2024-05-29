@@ -133,6 +133,10 @@ header i:first-child{
     margin-top: 30px;
 }
 
+.allineament{
+    margin-top: 4px;
+}
+
 .smallcircle {
 	background-color: #f26551;
 	color: white;
@@ -193,6 +197,22 @@ header i:first-child{
 
  div .btn-outline-secondary{
     padding-right: 8px;
+}
+
+/* Sezione FAQ */
+
+.faq{
+    margin-top: 25px;
+}
+
+/* Sezione Grafico */
+
+.grafico{
+    color: black;
+}
+
+.grafico img{
+    width: 100%;
 }
 
 
