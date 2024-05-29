@@ -77,6 +77,8 @@ header i:first-child{
 
 /* REGOLE MAIN */
 
+/* Menu verticale */
+
 .icon{
     line-height: 45px;
 }
@@ -85,9 +87,24 @@ header i:first-child{
     background-color: #12293e;
 }
 
+/* Main menu */
+
 .banana{
     height: calc(100vh - 100px);
     overflow-x: scroll;
+}
+.btn{
+    --bs-btn-padding-y: 0.75rem;
+    border: 1px solid white;
+}
+
+.breadcrumbs {
+	background-color: #165bba;
+	color: white;
+	border-radius: 25px;
+	font-size: 17px;
+	padding: 3px;
+	text-decoration: none;
 }
 
 
