@@ -8,14 +8,13 @@
 [class*="col-"] {
     flex:0 0 auto;
     /* DEBUG */
-    background-color: grey;
+    color: white;
     min-height: 50px;
 }
 
 /* debug color */
 
 .red{
-    /* debug */
     background-color: red;
     border: solid white 2px;
 }
@@ -40,7 +39,7 @@
 
 header {
     height: 100px;
-    background-color: grey;
+    background-color: #f8f9fa;
 }
 header .row{
     height: 100%;
@@ -53,6 +52,7 @@ header .row .col-8 .col-2{
 
 header img{
     padding-left: 6px;
+    width: 100%;
 }
 
 .form-control {
@@ -61,6 +61,7 @@ header img{
 
 header i{
     padding-right: 20px;
+    color:#5b5858 ;
 }
 
 header i:first-child{
@@ -78,11 +79,10 @@ header i:first-child{
 
 .icon{
     line-height: 45px;
-    padding-left: 20px;
 }
 
 .menu{
-    max-height: 700px;
+    background-color: #12293e;
 }
 
 .banana{

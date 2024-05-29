@@ -7,15 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Bootstrap Dashboard</title>
 </head>
 
 <body>
-        <header class="row align-items-center">
-                    <div class="col-2 m d-flex align-items-center red">
+    <div class="container-fluid">
+        <header>
+            <div class="row align-items-center">
+                    <div class="col-2 m d-flex align-items-center white">
                         <img src="img/logo.svg" alt="logo boolean">
                     </div>
-                    <div class="col-8 red">
+                    <div class="col-8 white">
                         <nav class="navbar bg-body-tertiary">
                             <form class="container-fluid">
                               <div class="input-group">
@@ -25,19 +30,20 @@
                             </form>
                           </nav>
                     </div>
-                    <div class="col-2 d-flex align-items-center red">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="col-2 d-flex align-items-center white">
+                        <i class="fa-solid fa-list d-sm-none d-md-none d-lg-inline"></i>
+                        <i class="fa-solid fa-circle-question d-sm-none d-md-none d-lg-inline"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-sm-none d-md-none d-lg-inline"></i>
                         <i class="fa-solid fa-bell"></i>
-
                     </div>
+                </div>        
         </header>
 
-         <main class="d-flex">
+         <main>
+            <div class="row">
               <!-- colonna verticale sinistra -->
-            <div class="col-1 col-lg-2 d-flex flex-column justify-content-between align-items-center menu icon green">
-                <div class="col-12 red">
+            <div class="col-sm-1 col-md-1 col-lg-2 d-flex flex-column justify-content-between align-items-center menu icon green">
+                <div class="col-12 d-flex flex-column align-items-center red">
 
                     <div>
                     <i class="fa-solid fa-house"></i>
@@ -53,11 +59,8 @@
                     <i class="fa-solid fa-signal"></i>
                     <span class="d-sm-none d-md-none d-lg-inline">Signal</span>
                     </div>
-
-
-                    
                 </div>
-                <div class="col-12 red">
+                <div class="col-12 d-flex flex-column align-items-center red">
                     <div>
                         <i class="fa-solid fa-gear"></i>
                         <span class="d-sm-none d-md-none d-lg-inline">Admin</span>
@@ -69,14 +72,16 @@
                <!-- Main page -->
 
                <!-- SEZIONE PERCORSO NEL SITO , INFO STUDENTI -->
-            <div class="col-11 col-md-10 banana yellow">
-                <div class="row mh-100">
-                <div class="col-12 d-md-flex flex-row-reverse blue">
-                    <div class="col-sm-12 col-md-4 red">
+            <!-- <div class="row mh-100 banana yellow"> -->
+
+             <div class="col-11 col-lg-10 d-md-flex flex-column mh-100 banana blue">
+                    <div class="row">
+                    <div class="d-flex flex-sm-column flex-md-row">
+                    <div class="col-sm-12 col-md-4 order-md-1 red">
                         <h3>Nuovo studente</h3>
                         img con plus
                     </div>
-                    <div class="col-sm-12 col-md-4 order-md-1 red">
+                    <div class="col-sm-12 col-md-4 order-md-0 red">
                         <h2>Boolean</h2>
                         Piano blaze
                         molliche pane
@@ -85,8 +90,9 @@
                         <span>Studenti online negli ultimi 30 minuti</span>
                         <h2>125</h2>
                     </div>
+                    </div>
                 </div>
-                </div>
+              
 
                 <!-- SEZIONE TABELLA -->
 
@@ -94,7 +100,10 @@
                 <div class="row">
                     <div class="col-12 col-lg-7 white">
                         <div class="tabella">
-                            <h3>Prossime Classi</h3>
+                            <div>
+                                <h3>Prossime Classi</h3>
+                            </div>
+                            
                             <table class="table">
                                 <thead>
                                   <tr>
@@ -182,13 +191,12 @@
                               </table>
 
                         </div>
-
                     </div>
-
-                </div>
+               
+          
 
                 <!-- SEZIONE FAQ -->
-                <div class="row">
+                <!-- <div class="row"> -->
                     <div class="col-12 yellow">
                         <h2>FAQ</h2>
                         <div>
@@ -203,10 +211,10 @@
                             <span>Come aggiungere un nuovo studente?</span>
                         </div>
                     </div>
-                </div>
+               
 
                 <!-- SEZIONE TO DO -->
-                <div class="row flex-column">
+                <!-- <div class="row flex-column"> -->
                     <div class="col-12 blue">
                         <h2>Todo</h2>
                         <div>
@@ -222,10 +230,10 @@
                             Controllare username github studenti
                         </div>
                     </div>
-                </div>        
+                <!-- </div>         -->
                         
                 <!-- SEZIONE GRAFICO -->
-                <div class="row">
+                <!-- <div class="row green"> -->
                     <div class="col-12">
                     <div>immagine grafico</div>
                     <h3>utenti attivi</h3>
@@ -239,8 +247,11 @@
                     <br>
                     <a href="#">Visualizza report approfondito</a>
                     </div>
-                </div>
+                <!-- </div> -->
+             </div>        div della prima row
             </div>
-         </main>  
+        </div>
+    </div>  
+ </main>     
 </body>
 </html>
